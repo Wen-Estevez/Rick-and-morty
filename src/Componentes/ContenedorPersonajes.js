@@ -2,17 +2,16 @@ import { useEffect, useState } from "react";
 import TarjetasPersonajes from "./TarjetasPersonajes";
 import './ContenedorPersonajes.css';
 
-export default function ContenedorPersonajes(pag){
-
+export default function ContenedorPersonajes({pag}){
     const [personajes,setPersonajes]=useState([]);
-    const fetchPersonajes= () => fetch(`https://rickandmortyapi.com/api/character/?page=${pag}`)
+    const fetchPersonajes= (pag) => fetch(`https://rickandmortyapi.com/api/character/?page=${pag}`)
       .then(response => response.json())
       .then(pagina => {
           if (pagina.results !== undefined){
             setPersonajes(pagina.results)
                   }
           })
-    useEffect(() => {fetchPersonajes()}, []);
+    useEffect(() => {fetchPersonajes(pag)}, [pag]);
 
     return(
         <div className="contenedor">
