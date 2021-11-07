@@ -1,0 +1,21 @@
+.card{
+    
+    display:grid;                              
+    position:relative;
+    align-items:center;
+    margin: 1rem;
+    padding: 0.5rem; 
+    border: 1px #ccc solid;
+    border-radius: 20px;
+
+}
+.imagen{
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+.card-title{
+    text-align: center;
+}
+.card-body{
+    text-align: center;
+}

@@ -8,11 +8,6 @@ export default function Home(){
 
     return(
         <div>
-            <nav className="navbar navbar-dark bg-dark">
-                <div className="container">
-                    <a className="navbar-brand text-uppercase" href="/">Rick and Morty App</a>
-                </div>
-            </nav>
             <img className="fondo" src={`${fondo}`}></img>
 
             <div>
@@ -28,7 +23,7 @@ export default function Home(){
                 <a className="BSiguiente" href="#">Siguiente</a>
             </div>
 
-            <ContenedorPersonajes>
+            <ContenedorPersonajes >
 
             </ContenedorPersonajes>
         </div>
