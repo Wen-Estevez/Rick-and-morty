@@ -17,6 +17,7 @@ export default function ContenedorPersonajes({pag}){
         <div className="contenedor">
             {personajes.map((personaje)=><TarjetasPersonajes
                 key={personaje.id}
+                id={personaje.id}
                 name={personaje.name}
                 img={personaje.image}
                 status={personaje.status}
