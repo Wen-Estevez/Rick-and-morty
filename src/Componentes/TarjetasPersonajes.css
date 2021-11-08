@@ -37,3 +37,17 @@
     } 
 
 }
+
+@media (min-width:992px){
+    .card{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .card:hover{
+        -webkit-box-shadow: -1px 6px 28px -8px rgb(80, 240, 40);
+        -moz-box-shadow: -1px 6px 28px -8px rgb(80, 240, 40);
+        box-shadow: -1px 6px 28px -8px rgb(80, 240, 40);
+    }
+    .imagen:hover{
+        transform:  rotateY(180deg); 
+    }
+}
