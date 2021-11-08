@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useState,useEffect } from "react";
 import './Extendida.css';
 import fondoExt from "../Images/fondoExt.jpg";
+import { Link } from "react-router-dom";
 
 export default function Extendida (){
     let id=useParams().id;
@@ -14,6 +15,7 @@ export default function Extendida (){
                  }
          })
    useEffect(() => {fetchPersonaje()}, [id]);
+
    if(personaje.name){
     return(
         <div>
@@ -27,6 +29,12 @@ export default function Extendida (){
                     <span>Genero: {`${personaje.gender}`}</span><br/>
                     <span>Ubicación: {`${personaje.location.name}`}</span>
                 </div>
+                <Link to={`/`}>
+                    <button>X</button>
+                </Link>
+                <Link to={`/episode/${personaje.id}`}>
+                    <button >Ver Episodios</button>
+                </Link>
             </div>
         </div>
     )}
