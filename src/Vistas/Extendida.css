@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+.fondoExt{
+    width: 100%;
+}
+.Extendida{   
+    margin-top: -150%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-block: 1.2rem;
+    width: 75%;
+    border-radius: 20px;
+    grid-template-columns:repeat(1,1fr);
+    background-color: #fff;
+    -webkit-box-shadow: -1px 2px 18px -8px rgb(2, 145, 21);
+    -moz-box-shadow: -1px 2px 18px -8px rgb(2, 145, 21);
+    box-shadow: -1px 2px 18px -8px rgb(2, 145, 21);
+
+}
+
+.fotopersonaje{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px ;
+
+}
+
+.infopj{
+    text-align: center;
+    font-family: "Creepster";
+    font-size: 20px;
+    color: rgb(2, 145, 21);
+}
