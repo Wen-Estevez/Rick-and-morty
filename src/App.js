@@ -1,6 +1,7 @@
 import Home from "./Vistas/Home" 
 import Extendida from "./Vistas/Extendida" 
 import { Route,Routes} from 'react-router-dom';
+import Episodios from "./Vistas/Episodios";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
      <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route exact path="/:id" element={<Extendida/>}/>
+        <Route exact path="/episode/:id" element={<Episodios/>}/>
      </Routes>
    </div>
   );
