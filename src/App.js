@@ -1,11 +1,14 @@
 import Home from "./Vistas/Home" 
+import Extendida from "./Vistas/Extendida" 
+import { Route,Routes} from 'react-router-dom';
 
 function App() {
   return (
    <div>
-     <Home>
-
-     </Home>
+     <Routes>
+        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/:id" element={<Extendida/>}/>
+     </Routes>
    </div>
   );
 }
