@@ -14,11 +14,12 @@ export default function Extendida (){
                  }
          })
    useEffect(() => {fetchPersonaje()}, [id]);
+   if(personaje.name){
     return(
         <div>
             <img className="fondoExt" src={`${fondoExt}`} />
         <div className="Extendida">
-            <img className="fotopersonaje" src={`${personaje.image}`}/><br/>
+            <img className="fotopersonaje" src={`${personaje.image}` alt="Imagen personaje"}/><br/>
             <div className="infopj">
                 <span>Nombre: {`${personaje.name}`}</span><br/>
                 <span>Estado: {`${personaje.status}`}</span><br/>
@@ -28,5 +29,7 @@ export default function Extendida (){
             </div>
         </div>
         </div>
-    )
+    ))
+   else{return <></>}
+    
 }
