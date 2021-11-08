@@ -17,19 +17,19 @@ export default function Extendida (){
    if(personaje.name){
     return(
         <div>
-            <img className="fondoExt" src={`${fondoExt}`} />
-        <div className="Extendida">
-            <img className="fotopersonaje" src={`${personaje.image}` alt="Imagen personaje"}/><br/>
-            <div className="infopj">
-                <span>Nombre: {`${personaje.name}`}</span><br/>
-                <span>Estado: {`${personaje.status}`}</span><br/>
-                <span>Especie: {`${personaje.species}`}</span><br/>
-                <span>Genero: {`${personaje.gender}`}</span><br/>
-                <span>Ubicación: {`${personaje.location.name}`}</span>
+            <img className="fondoExt" src={`${fondoExt}`} alt="Fondo Extendida"/>
+            <div className="Extendida">
+                <img className="fotopersonaje" src={`${personaje.image}`} alt="Imagen personaje"/>
+                <div className="infopj" >
+                    <span>Nombre: {`${personaje.name}`}</span><br/>
+                    <span>Estado: {`${personaje.status}`}</span><br/>
+                    <span>Especie: {`${personaje.species}`}</span><br/>
+                    <span>Genero: {`${personaje.gender}`}</span><br/>
+                    <span>Ubicación: {`${personaje.location.name}`}</span>
+                </div>
             </div>
         </div>
-        </div>
-    ))
+    )}
    else{return <></>}
     
 }
