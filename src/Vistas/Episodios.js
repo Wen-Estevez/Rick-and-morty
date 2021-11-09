@@ -4,6 +4,9 @@ import TarjetasEpisodios from "../Componentes/TarjetasEpisodios";
 import './Episodios.css';
 import { Link } from "react-router-dom";
 
+//Trae la informacion de los episodios en los que aparece el personaje
+//Trae la informacion de cada episodio para crear tarjetas con la informacion
+
 export default function Episodios (){
     const [episodios,setEpisodios]=useState([]);
     let id=useParams().id;

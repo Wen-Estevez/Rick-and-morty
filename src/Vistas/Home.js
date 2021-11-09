@@ -5,6 +5,7 @@ import ContenedorPersonajes from '../Componentes/ContenedorPersonajes';
 import {useState} from 'react';
 import { VscChevronLeft,VscChevronRight } from "react-icons/vsc";
 
+//Pagina principal recibe el estado cuando cambie de paginas
 
 export default function Home(){
     const [pagina,setPagina]=useState(1);
@@ -27,13 +28,7 @@ export default function Home(){
                     </button>
             </div>     
         </div>
-
-
-            <ContenedorPersonajes 
-            pag={pagina}
-            >
-
-            </ContenedorPersonajes>
+            <ContenedorPersonajes pag={pagina}/>
         </div>
 
     )

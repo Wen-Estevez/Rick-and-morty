@@ -1,6 +1,8 @@
 import './TarjetasPersonajes.css';
 import { Link } from 'react-router-dom';
 
+//Recibe la informacion y crea una tarjeta por cada personaje 
+
 export default function TarjetasPersonajes({name,img,status, species,id}){
 
     return(

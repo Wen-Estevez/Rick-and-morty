@@ -1,7 +1,9 @@
+
 .CardEpisodios{
     margin-top: 0.1rem;
     grid-template-columns: repeat(2,1fr);
     display: grid;
+    border-radius: 25px;
 }
 
 .Boton{

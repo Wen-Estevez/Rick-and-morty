@@ -5,17 +5,19 @@ import fondoExt from "../Images/fondoExt.jpg";
 import fondoExtpc from "../Images/fondoExtpc.jpg";
 import { Link } from "react-router-dom";
 
+//Trae la informacion del personaje y crea la tarjeta del personaje
+
 export default function Extendida (){
-   let id=useParams().id;
-   const [personaje,setPersonaje]=useState([]);
-   const fetchPersonaje= () => fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    let id=useParams().id;
+    const [personaje,setPersonaje]=useState([]);
+    const fetchPersonaje= () => fetch(`https://rickandmortyapi.com/api/character/${id}`)
      .then(response => response.json())
      .then(pj => {
         if (pj !== undefined){
            setPersonaje(pj)
         }
          })
-   useEffect(() => {fetchPersonaje()// eslint-disable-next-line react-hooks/exhaustive-deps
+    useEffect(() => {fetchPersonaje()// eslint-disable-next-line react-hooks/exhaustive-deps
 },[id]);
 
    if(personaje.name){
@@ -35,7 +37,6 @@ export default function Extendida (){
                     <span>Genero: {`${personaje.gender}`}</span><br/>
                     <span>Ubicación: {`${personaje.location.name}`}</span>
                 </div>
-                
                 <Link  className="link" to={`/episode/${personaje.id}`}>
                     <button className="Ver">Ver Episodios</button>
                 </Link>

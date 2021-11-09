@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom"
 
+//Punto de acceso a la App
+
 ReactDOM.render(
   <BrowserRouter>
     <App />

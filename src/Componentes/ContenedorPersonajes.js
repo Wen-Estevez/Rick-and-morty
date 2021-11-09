@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import TarjetasPersonajes from "./TarjetasPersonajes";
 import './ContenedorPersonajes.css';
 
+//Contenedor de cartas de personajes, trae la informacion de las paginas
+
 export default function ContenedorPersonajes({pag}){
     const [personajes,setPersonajes]=useState([]);
     const fetchPersonajes= (pag) => fetch(`https://rickandmortyapi.com/api/character/?page=${pag}`)
