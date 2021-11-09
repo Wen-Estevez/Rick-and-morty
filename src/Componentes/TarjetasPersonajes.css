@@ -6,9 +6,9 @@
     margin: 1rem;
     padding: 0.5rem; 
     border-radius: 20px;
-    -webkit-box-shadow: -1px 2px 18px -8px rgb(2, 40, 110);
-    -moz-box-shadow: -1px 2px 18px -8px rgb(2, 40, 110);
-    box-shadow: -1px 2px 18px -8px rgb(2, 40, 110);
+    -webkit-box-shadow: -1px 2px 18px -8px rgb(2, 136, 9);
+    -moz-box-shadow: -1px 2px 18px -8px rgb(2, 136, 9);
+    box-shadow: -1px 2px 18px -8px rgb(2, 136, 9);
 
 }
 .imagen{
@@ -18,7 +18,7 @@
 
 .info{
     text-align: center;
-    color: rgb(2, 40, 110);
+    color: #6DACDD;
     font-family: "Creepster";
 }
 
