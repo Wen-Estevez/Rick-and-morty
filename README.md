@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+Está es una aplicación desarrollada en React que consume la API de The Rick and Morty API para mostrar los distintos personajes de la serie, su información, episodios en los que aparece y los datos del episodio.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Elegí esta API ya que fue la recomendada para la realizacion de la prueba.
 
-## Available Scripts
+ ### Instalación:
+ npm install
+<br>
+### Ejecución: 
+npm run start
+<br>
+### Aplicación para producción: 
+npm run build
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+src/index.js: Punto de acceso a la App.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+src/App.js: Conecta las url con las rutas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br>
+src/Componentes: Contiene los componentes de la aplicación y sus respectivos estilos.
 
-### `npm test`
+src/Componentes/Tarjetas personajes.js: Recibe la informacion y crea una tarjeta por cada personaje.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src/Componentes/TarjetasEpisodios.js: Recibe la informacion y grafica una tarjeta por cada episodio.
 
-### `npm run build`
+src/Componentes/ContenedorPersonajes.js: Contenedor de cartas de personajes, trae la informacion de las paginas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/Vistas: Contiene vistas de la informacion de los personajes y sus respectivos estilos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+src/Vistas/Home.js: Pagina principal, recibe el estado cuando cambie de paginas.
 
-### `npm run eject`
+src/Vistas/Extendida.js: Trae la informacion del personaje y crea la tarjeta del personaje.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+src/Vistas/Episodios.js: Trae la informacion de los episodios en los que aparece el personaje y la informacion de cada episodio para crear la respectiva tarjeta.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+src/Images: Contiene las imagenes de la aplicacion.
+<br>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Una de las mejoras que de pueden implementar en la aplicación es incluir media queries para la que la aplicación pueda visualizarse de manera adecuada en todos los dispositivos de acuerdo a sus dimensiones.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En cuanto a las actualizaciones, una muy buena sería incluir todas las páginas de la API para mostrar y poder elegir a todos los personajes que almacena.
