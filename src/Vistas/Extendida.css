@@ -14,6 +14,13 @@
 
 }
 
+.BotonC{
+    right: inherit;
+    color: #fff;
+    background: rgb(75, 2, 117);
+    border-radius: 8px;    
+}
+
 .fotopersonaje{
     width: 85%;
     margin-left: auto;
@@ -24,14 +31,42 @@
 }
 
 .infopj{
+    padding-top: 5%;
     text-align: center;
     font-family: "Creepster";
-    font-size: 25px;
-    color: rgb(117, 2, 117);
+    font-size: 20px;
+    color: rgb(75, 2, 117);
 }
+
+
+
+.Ver{
+    margin: 15px;
+    color: #fff ;
+    background: rgb(75, 2, 117);
+    font-size: 95%;
+    border-radius: 8px;  
+}
+
  @media (min-width:768px){
     .infopj{
         font-size: 45px;
+    }
+    .BotonC{
+        position: absolute;
+        margin-top: -105%;
+        margin-left: 57%;
+        font-size: 240%;
+        border-radius: 15px; 
+
+    }
+    
+    .Ver{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        font-size: 200%;
+        border-radius: 12px;  
     }
  }
 

@@ -22,6 +22,9 @@ export default function Extendida (){
         <div>
             <img className="fondoExt" src={`${fondoExt}`} alt="Fondo Extendida"/>
             <div className="Extendida">
+                <Link to={`/`}>
+                    <button className="BotonC">X</button>
+                </Link>
                 <img className="fotopersonaje" src={`${personaje.image}`} alt="Imagen personaje"/>
                 <div className="infopj" >
                     <span>Nombre: {`${personaje.name}`}</span><br/>
@@ -30,11 +33,9 @@ export default function Extendida (){
                     <span>Genero: {`${personaje.gender}`}</span><br/>
                     <span>Ubicación: {`${personaje.location.name}`}</span>
                 </div>
-                <Link to={`/`}>
-                    <button>X</button>
-                </Link>
+                
                 <Link to={`/episode/${personaje.id}`}>
-                    <button >Ver Episodios</button>
+                    <button className="Ver">Ver Episodios</button>
                 </Link>
             </div>
         </div>
