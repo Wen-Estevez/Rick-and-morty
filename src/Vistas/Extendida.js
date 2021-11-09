@@ -5,16 +5,17 @@ import fondoExt from "../Images/fondoExt.jpg";
 import { Link } from "react-router-dom";
 
 export default function Extendida (){
-    let id=useParams().id;
+   let id=useParams().id;
    const [personaje,setPersonaje]=useState([]);
    const fetchPersonaje= () => fetch(`https://rickandmortyapi.com/api/character/${id}`)
      .then(response => response.json())
      .then(pj => {
-         if (pj !== undefined){
+        if (pj !== undefined){
            setPersonaje(pj)
-                 }
+        }
          })
-   useEffect(() => {fetchPersonaje()}, [id]);
+   useEffect(() => {fetchPersonaje()// eslint-disable-next-line react-hooks/exhaustive-deps
+},[id]);
 
    if(personaje.name){
     return(

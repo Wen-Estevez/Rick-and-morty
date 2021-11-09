@@ -11,10 +11,10 @@ export default function Home(){
 
     return(
         <div className="home">
-            <img className="fondo" src={`${fondo}`}></img>
+            <img className="fondo" src={`${fondo}`}alt="Fondo"></img>
 
             <div className="">
-                <img className="foto" src={`${foto}`}></img>       
+                <img className="foto" src={`${foto}`} alt="Imagen personaje"></img>       
                 <div className="botones">
                     <button className="btn" onClick={(e) => {
                         if (pagina<=1){}
