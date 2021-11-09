@@ -1,0 +1,31 @@
+.CardEpisodios{
+    margin-top: 0.1rem;
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+}
+
+.Boton{
+    margin: 15px;
+    margin-left: 45px;
+    border-radius: 5px;
+    border: 1px #ccc solid;
+    color: #ccc;
+    background: #fff;
+    font-size: 25px;
+}
+
+@media (min-width:768px){
+    .CardEpisodios{
+        margin: 1.2rem;
+        grid-template-columns: repeat(3,1fr);
+        display: grid;
+    }
+}
+@media (min-width:992px){
+    .CardEpisodios{
+        margin: 1.2rem;
+        grid-template-columns: repeat(5,1fr);
+        display: grid;
+       
+    }
+}

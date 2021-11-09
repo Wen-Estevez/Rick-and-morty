@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useState,useEffect } from "react";
 import './Extendida.css';
 import fondoExt from "../Images/fondoExt.jpg";
+import fondoExtpc from "../Images/fondoExtpc.jpg";
 import { Link } from "react-router-dom";
 
 export default function Extendida (){
@@ -21,8 +22,9 @@ export default function Extendida (){
     return(
         <div>
             <img className="fondoExt" src={`${fondoExt}`} alt="Fondo Extendida"/>
+            <img className="fondoExtpc" src={`${fondoExtpc}`} alt="Fondo ExtendidaPc"/>
             <div className="Extendida">
-                <Link to={`/`}>
+                <Link className="closelink" to={`/`}>
                     <button className="BotonC">X</button>
                 </Link>
                 <img className="fotopersonaje" src={`${personaje.image}`} alt="Imagen personaje"/>
@@ -34,7 +36,7 @@ export default function Extendida (){
                     <span>Ubicación: {`${personaje.location.name}`}</span>
                 </div>
                 
-                <Link to={`/episode/${personaje.id}`}>
+                <Link  className="link" to={`/episode/${personaje.id}`}>
                     <button className="Ver">Ver Episodios</button>
                 </Link>
             </div>

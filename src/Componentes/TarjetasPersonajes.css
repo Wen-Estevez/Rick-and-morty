@@ -15,10 +15,15 @@
     width: 100%;
     border-radius: 20px;
 }
+
 .info{
     text-align: center;
     color: rgb(80, 240, 40);
     font-family: "Creepster";
+}
+
+.card-body{
+    text-decoration: none;
 }
 
 @media (min-width:768px) {

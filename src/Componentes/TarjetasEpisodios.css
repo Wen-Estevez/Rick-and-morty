@@ -1,0 +1,34 @@
+
+.Episodios{
+    margin: 20px;
+    padding: 3%;
+    width: 150px;
+    height: auto;
+    text-align: center;
+    border: 1px #ccc solid;
+    border-radius: 20px;
+    font-size: 20px;
+    -webkit-box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+    -moz-box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+    box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+}
+
+@media (min-width:768px){
+    .Episodios{
+        margin: 20px;
+        padding: 3%;
+        width: 150px;
+        height: auto;
+        text-align: center;
+        border: 1px #ccc solid;
+        border-radius: 20px;
+        font-size: 20px;
+        -webkit-box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+        -moz-box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+        box-shadow: 6px 6px 15px -4px rgba(168,165,168,1);
+    }
+}
+
+.Episodios:hover{
+    transform: scale(1.1);
+}

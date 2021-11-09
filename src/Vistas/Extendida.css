@@ -5,17 +5,17 @@
     height: 100%;
     z-index: auto;
 }
+
 .Extendida{   
     margin-top: -148%;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
-    grid-template-columns:repeat(1,1fr);  
-
+    grid-template-columns:repeat(1,1fr); 
 }
 
 .BotonC{
-    right: inherit;
+    margin-left: 10%;
     color: #fff;
     background: rgb(75, 2, 117);
     border-radius: 8px;    
@@ -38,8 +38,6 @@
     color: rgb(75, 2, 117);
 }
 
-
-
 .Ver{
     margin: 15px;
     color: #fff ;
@@ -48,25 +46,32 @@
     border-radius: 8px;  
 }
 
+.link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.fondoExtpc{
+    display: none;
+}
+
  @media (min-width:768px){
     .infopj{
         font-size: 45px;
     }
     .BotonC{
-        position: absolute;
-        margin-top: -105%;
-        margin-left: 57%;
         font-size: 240%;
         border-radius: 15px; 
 
     }
     
     .Ver{
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
+        margin-left: 10%;
         font-size: 200%;
         border-radius: 12px;  
+    }
+    .fondoExtpc{
+        display: none;
     }
  }
 
@@ -78,19 +83,32 @@
 
     .Extendida{   
         padding: 15px;
-        margin-top: -170%;
+        margin-top: -175%;
         width: 60%;
-        height: auto;
         grid-template-columns:repeat(2,1fr); 
         display: grid;
         border: 1px rgb(230, 229, 229) solid;
-        border-radius: 5%;
+        border-radius: 20px;
         -webkit-box-shadow: 5px 6px 8px -1px rgba(173,171,173,1);
         -moz-box-shadow: 5px 6px 8px -1px rgba(173,171,173,1);
         box-shadow: 5px 6px 8px -1px rgba(173,171,173,1);
 
     }
-    .fotopersonaje{        
+    .BotonC{
+        margin-left: -1%;
+        color: #ccc;
+        background: rgb(255, 255, 255);
+        border: none;
+    }
+
+    .BotonC:hover{
+        color: rgb(75, 2, 117);
+    }
+    .closelink{
+        position: absolute;
+    }
+    .fotopersonaje{   
+        width: 55%;             
         -webkit-box-shadow: 0px 0px 13px 1px rgba(168,165,168,1);
         -moz-box-shadow: 0px 0px 13px 1px rgba(168,165,168,1);
         box-shadow: 0px 0px 13px 1px rgba(168,165,168,1);
@@ -99,9 +117,12 @@
         transform:  rotateY(180deg); 
     }
     .infopj{
-        padding: 1rem;
         font-size: 25px;
         text-align: left;
         margin-top: 15%;
+    }
+    .fondoExtpc{
+        width: 100%;
+       
     }
  }

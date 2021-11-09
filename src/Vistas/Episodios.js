@@ -1,6 +1,8 @@
 import { useState,useEffect } from "react";
 import { useParams} from "react-router";
-import TarjetasEpisodios from "../Componentes/TarjetasEpisodios"
+import TarjetasEpisodios from "../Componentes/TarjetasEpisodios";
+import './Episodios.css';
+import { Link } from "react-router-dom";
 
 export default function Episodios (){
     const [episodios,setEpisodios]=useState([]);
@@ -23,7 +25,11 @@ export default function Episodios (){
     },[]);
 
     return(
-        <div>
+        <div>            
+            <Link className="close" to={`/`}>
+                    <button className="Boton">X</button>
+            </Link>
+            <div className="CardEpisodios">
             {episodios.map((ep)=><TarjetasEpisodios
             key={ep.id}
             id={ep.id}
@@ -31,6 +37,7 @@ export default function Episodios (){
             date={ep.air_date}
             episode={ep.episode}
             />)}
+            </div>
         </div>
     )
 
