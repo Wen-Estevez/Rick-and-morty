@@ -6,6 +6,7 @@
     margin: 1rem;
     padding: 0.5rem; 
     border-radius: 20px;
+    background-color: #fff;
     -webkit-box-shadow: -1px 2px 18px -8px rgb(2, 82, 136);
     -moz-box-shadow: -1px 2px 18px -8px rgb(2, 82, 136);
     box-shadow: -1px 2px 18px -8px rgb(2, 82, 136);

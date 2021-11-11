@@ -1,6 +1,6 @@
 import './Home.css';
 import fondo from "../Images/fondo.jpg";
-import foto from "../Images/foto.jpg";
+import foto from "../Images/foto.png";
 import ContenedorPersonajes from '../Componentes/ContenedorPersonajes';
 import {useState} from 'react';
 import { VscChevronLeft,VscChevronRight } from "react-icons/vsc";

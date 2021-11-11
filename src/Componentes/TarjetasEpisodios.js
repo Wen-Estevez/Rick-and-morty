@@ -6,6 +6,7 @@ import cinco from "../Images/5.jpg"
 import seis from "../Images/6.jpg"
 
 
+
 const ContEpisodios = styled.div`
     background-image:url(${(props)=>{
         switch (props.id%5){

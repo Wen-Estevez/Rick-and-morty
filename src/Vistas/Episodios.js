@@ -3,6 +3,7 @@ import { useParams} from "react-router";
 import TarjetasEpisodios from "../Componentes/TarjetasEpisodios";
 import './Episodios.css';
 import { Link } from "react-router-dom";
+import {GoHome } from "react-icons/go";
 
 //Trae la informacion de los episodios en los que aparece el personaje
 //Trae la informacion de cada episodio para crear tarjetas con la informacion
@@ -30,7 +31,7 @@ export default function Episodios (){
     return(
         <div>            
             <Link className="close" to={`/`}>
-                    <button className="Boton">X</button>
+                    <button className="Boton"><GoHome size={30}/></button>
             </Link>
             <div className="CardEpisodios">
             {episodios.map((ep)=><TarjetasEpisodios

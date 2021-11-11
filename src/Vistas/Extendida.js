@@ -4,6 +4,7 @@ import './Extendida.css';
 import fondoExt from "../Images/fondoExt.jpg";
 import fondoExtpc from "../Images/fondoExtpc.jpg";
 import { Link } from "react-router-dom";
+import {GoHome } from "react-icons/go";
 
 //Trae la informacion del personaje y crea la tarjeta del personaje
 
@@ -27,7 +28,7 @@ export default function Extendida (){
             <img className="fondoExtpc" src={`${fondoExtpc}`} alt="Fondo ExtendidaPc"/>
             <div className="Extendida">
                 <Link className="closelink" to={`/`}>
-                    <button className="BotonC">Volver</button>
+                    <button className="BotonC"><GoHome size={30}/></button>
                 </Link>
                 <img className="fotopersonaje" src={`${personaje.image}`} alt="Imagen personaje"/>
                 <div className="infopj" >
