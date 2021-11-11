@@ -23,6 +23,12 @@ const ContEpisodios = styled.div`
     -moz-box-shadow: 0px 2px 13px -2px rgba(161,161,161,1);
     box-shadow: 0px 2px 13px -2px rgba(161,161,161,1);
 
+    @media (min-width:992px){
+    &:hover{
+        transform:  rotateY(180deg); 
+        transition: transform .2s;
+
+    }
 
 `;
 const TextoInfo = styled.span`                          //Titulos de las tarjetas
