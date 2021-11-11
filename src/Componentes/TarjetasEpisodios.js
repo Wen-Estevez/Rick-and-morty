@@ -12,7 +12,7 @@ const ContEpisodios = styled.div`
             case 1: return tres
             case 2: return cuatro
             case 3: return cinco
-            case 4: return seis
+            default: return seis
         }}});
     width:170px;
     height:270px;
