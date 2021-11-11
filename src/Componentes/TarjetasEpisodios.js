@@ -5,6 +5,7 @@ import cuatro from "../Images/4.jpg"
 import cinco from "../Images/5.jpg"
 import seis from "../Images/6.jpg"
 
+
 const ContEpisodios = styled.div`
     background-image:url(${(props)=>{
         switch (props.id%5){
@@ -29,7 +30,7 @@ const ContEpisodios = styled.div`
         transition: transform .2s;
 
     }
-
+    }
 `;
 const TextoInfo = styled.span`                          //Titulos de las tarjetas
     text-align: center;
@@ -38,7 +39,7 @@ const TextoInfo = styled.span`                          //Titulos de las tarjeta
     margin-left: auto;
     margin-right: auto;
     display: block;
-
+    
 `;
 
 //Recibe la informacion y grafica una tarjeta por cada episodio

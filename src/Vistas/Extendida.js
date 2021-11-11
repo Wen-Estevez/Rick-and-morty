@@ -27,7 +27,7 @@ export default function Extendida (){
             <img className="fondoExtpc" src={`${fondoExtpc}`} alt="Fondo ExtendidaPc"/>
             <div className="Extendida">
                 <Link className="closelink" to={`/`}>
-                    <button className="BotonC">X</button>
+                    <button className="BotonC">Volver</button>
                 </Link>
                 <img className="fotopersonaje" src={`${personaje.image}`} alt="Imagen personaje"/>
                 <div className="infopj" >
@@ -36,10 +36,10 @@ export default function Extendida (){
                     <span>Especie: {`${personaje.species}`}</span><br/>
                     <span>Genero: {`${personaje.gender}`}</span><br/>
                     <span>Ubicación: {`${personaje.location.name}`}</span>
-                </div>
-                <Link  className="link" to={`/episode/${personaje.id}`}>
-                    <button className="Ver">Ver Episodios</button>
-                </Link>
+                    <Link  className="link" to={`/episode/${personaje.id}`}>
+                        <button className="Ver">Ver Episodios</button>
+                    </Link>
+                </div>                
             </div>
         </div>
     )}
