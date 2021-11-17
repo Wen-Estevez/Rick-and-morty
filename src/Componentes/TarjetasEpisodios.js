@@ -5,11 +5,9 @@ import cuatro from "../Images/4.jpg"
 import cinco from "../Images/5.jpg"
 import seis from "../Images/6.jpg"
 
-
-
 const ContEpisodios = styled.div`
-    background-image:url(${(props)=>{
-        switch (props.id%5){
+    background-image:url(${(props)=>{               //Recibe en la variable global props que contiene lo que pasamos por parametro
+        switch (props.id%5){                        //Hace el modulo y le da un fondo a cada episodio
             case 0: return dos
             case 1: return tres
             case 2: return cuatro
@@ -26,9 +24,9 @@ const ContEpisodios = styled.div`
     box-shadow: 0px 2px 13px -2px rgba(161,161,161,1);
 
     @media (min-width:992px){
-    &:hover{
-        transform:  rotateY(180deg); 
-        transition: transform .2s;
+        &:hover{
+            transform:  rotateY(180deg); 
+            transition: transform .2s;
 
     }
     }
@@ -40,13 +38,12 @@ const TextoInfo = styled.span`                          //Titulos de las tarjeta
     margin-left: auto;
     margin-right: auto;
     display: block;
-    
 `;
 
 //Recibe la informacion y grafica una tarjeta por cada episodio
 
 export default function TarjetasEpisodios({id,name,date,episode}){
- //   @media (min-width:)
+
     return(
         <ContEpisodios id={id}>
             <TextoInfo>- {`${id}`}</TextoInfo>
