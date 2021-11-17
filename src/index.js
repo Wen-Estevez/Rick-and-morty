@@ -8,8 +8,8 @@ import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
 
-    <BrowserRouter>     //Enrutador
-      <App />           //app
+    <BrowserRouter>    {/*Enrutador*/}
+      <App />           {/*app*/}
     </BrowserRouter>,
 
   document.getElementById('root')
