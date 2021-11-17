@@ -9,19 +9,19 @@ import {GoHome } from "react-icons/go";
 //Trae la informacion del personaje y crea la tarjeta del personaje
 
 export default function Extendida (){
-    let id=useParams().id;
-    const [personaje,setPersonaje]=useState([]);
-    const fetchPersonaje= () => fetch(`https://rickandmortyapi.com/api/character/${id}`)
-     .then(response => response.json())
+    let id=useParams().id;                                  //Guarda el id en la barra de direcciones
+    const [personaje,setPersonaje]=useState([]);            //Crea el estado personaje
+    const fetchPersonaje= () => fetch(`https://rickandmortyapi.com/api/character/${id}`)    //Promesa trae informacion de un personaje especifico
+     .then(response => response.json())                                                     //Convierte la respuesta en un archivo json
      .then(pj => {
         if (pj !== undefined){
-           setPersonaje(pj)
+           setPersonaje(pj)                                                                 //Guarda la informacion en el estado personaje
         }
          })
     useEffect(() => {fetchPersonaje()// eslint-disable-next-line react-hooks/exhaustive-deps
-},[id]);
+},[id]);                                                                    //Siempre que cambie el id, hace el fetch
 
-   if(personaje.name){
+   if(personaje.name){                      //Revisa si hay algo en el estado, si lo hay grafica la tarjeta (evita errores por asincronia)
     return(
         <div>
             <img className="fondoExt" src={`${fondoExt}`} alt="Fondo Extendida"/>
